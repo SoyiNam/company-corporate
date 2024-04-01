@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>corporate</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header" class="header">
+            <h1 class="logo">
+                <a href="#none">
+                    <img src="./img/Netflix_Logo.png" alt="넷플릭스 로고">
+                </a>
+            </h1>
+
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#none">HOME</a></li>
+                    <li><a href="#none">WE ARE</a></li>
+                    <li><a href="#none">WORK</a></li>
+                    <li><a href="/html/review.html" class="menu_active">REVIEW</a></li>
+                    <li><a href="#none">JOIN</a></li>
+                    <li><a onclick="alert('연락처: 010-0000-0000')" href="#none">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+            <a href="#none" class="menu_open" title="">
+                <img src="./img/nav_btn.png" alt="메뉴 열기">
+            </a>
+        </header>
+        <main id="main" class="main">
+            <div class="main_image">
+                <h2 class="hide">메인 이미지</h2>
+                <a href="#none"><img src="./img/slide01.webp" alt="메인 이미지"></a>
+            </div>
+
+            <section class="we_are">
+                <h2>Values</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </section>
+
+            <section class="main_content">
+                <ul>
+                    <li>
+                        <a href="#none">
+                            <img src="./img/genres01.png" alt="">
+                            <h3>HOME</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="./img/genres02.png" alt="">
+                            <h3>WE ARE</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="./img/genres03.png" alt="">
+                            <h3>WORK</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="./img/genres04.png" alt="">
+                            <h3>BLOG</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="divider">
+
+            <section class="work">
+                <h2>A PIECE OF WORK</h2>
+                <ul>
+                    <li><img src="./img/movie01.webp" alt="이미지1"></li>
+                    <li><img src="./img/movie02.jpg" alt="이미지2"></li>
+                    <li><img src="./img/movie03.webp" alt="이미지3"></li>
+                    <li><img src="./img/movie04.webp" alt="이미지4"></li>
+                    <li><img src="./img/movie05.webp" alt="이미지5"></li>
+                    <li><img src="./img/movie06.webp" alt="이미지6"></li>
+                    <li><img src="./img/movie07.webp" alt="이미지7"></li>
+                    <li><img src="./img/movie08.jpg" alt="이미지8"></li>
+                </ul>
+            </section>
+
+            <hr class="short_divider">
+
+            <section class="blog">
+                <h2>Today<br>Actor</h2>
+                <ul>
+                    <li>
+                        <img src="./img/actor01.png" alt="">
+                        <p><span>OCT 30, 2016</span>
+                            There are many variations of passages of Lorem Ipsum</p>
+                    </li>
+                    <li>
+                        <img src="./img/actor02.png" alt="">
+                        <p><span>OCT 30, 2016</span>
+                            There are many variations of passages of Lorem Ipsum</p>
+                    </li>
+                    <li>
+                        <img src="./img/actor03.png" alt="">
+                        <p><span>OCT 30, 2016</span>
+                            There are many variations of passages of Lorem Ipsum</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer id="footer" class="footer">
+            COPYRIGHT © soyinam
+        </footer>
+    </div>
+</body>
+
+<script>
+    const menu = document.querySelector('.menu_open')
+    const menuList = document.querySelector('.header .gnb')
+
+    menu.addEventListener('click', function () {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            console.log(menuList.style.display)
+            menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
+        }
+        return
+    }
+    );
+
+    window.addEventListener('resize', function () {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            menuList.style.display = 'none'
+        } else {
+            menuList.style.display = 'block'
+        }
+    })
+</script>
+
+</html>
