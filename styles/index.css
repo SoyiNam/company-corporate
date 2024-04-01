@@ -1,0 +1,444 @@
+/* Reset */
+body,
+div,
+section,
+header,
+main,
+footer h1,
+h2,
+h3,
+dl,
+dt,
+dd,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+hr {
+    height: 1px;
+    background: #999;
+    border: 0 none;
+}
+
+.hide {
+    width: 0;
+    height: 0;
+    margin: -1px;
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.wrap {
+    min-width: 320px;
+}
+
+/* Divider */
+.divider {
+    max-width: 1100px;
+    margin: 0 auto 100px;
+}
+
+.short_divider {
+    max-width: 30px;
+    height: 2px;
+    margin-bottom: 100px;
+    background-color: #D9232E;
+}
+
+/* HEADER */
+.header {
+    height: 100px;
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header .gnb ul {
+    width: 500px;
+    display: flex;
+    gap: 18px;
+    color: black;
+    position: relative;
+    z-index: 10;
+}
+
+.header .gnb ul a:hover {
+    color: #D9232E;
+    background-color: black;
+}
+
+.menu_active {
+    color: #D9232E;
+    font-weight: bold;
+}
+
+.header .logo img {
+    width: 198px
+}
+
+.header .menu_open {
+    display: none;
+}
+
+
+
+/* MAIN */
+.main_image {
+    margin-bottom: 100px;
+}
+
+.main_image img {
+    width: 100%;
+}
+
+/* We are */
+.we_are {
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto 100px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.we_are h2 {
+    width: 50%;
+    font-size: 40px;
+    font-weight: 300;
+    color: #D9232E;
+}
+
+.we_are p {
+    width: 50%;
+    padding-left: 20px;
+    border-left: 1px solid#999;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Main content */
+.main_content {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.main_content ul {
+    display: flex;
+    gap: 30px
+}
+
+.main_content ul h3 {
+    color: #D9232E;
+    margin-bottom: 20px;
+}
+
+.main_content ul li {
+    width: 25%;
+    text-align: center;
+}
+
+.main_content ul li p {
+    font-size: 14px;
+}
+
+.main_content img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Work */
+.work {
+    margin-bottom: 100px;
+}
+
+.work ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work h2 {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    color: #D9232E;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.work ul li {
+    width: 25%;
+
+}
+
+.work ul li img {
+    width: 100%;
+}
+
+/* Blog */
+.blog {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.blog h2 {
+    width: 25%;
+    margin: 0 auto 60px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    color: #D9232E;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.blog ul {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog ul li {
+    width: 32%;
+}
+
+.blog ul li img {
+    width: 100%;
+    display: block;
+}
+
+.blog ul li p span {
+    display: block;
+    margin: 5px 0 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* FOOTER */
+.footer {
+    color: #D9232E;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1023px) {
+
+    /* We are */
+    .we_are {
+        max-width: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .we_are h2 {
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    .we_are p {
+        width: auto;
+        padding-left: 0;
+        border-left: 0 none;
+    }
+
+    /* Work */
+    .work h2 {
+        width: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .work ul {
+        max-width: auto;
+        flex-wrap: wrap;
+    }
+
+    .work ul li {
+        width: 50%;
+    }
+
+    .work img {
+        width: 100%;
+    }
+
+    /* Blog */
+    .blog {
+        max-width: auto;
+        padding: 0;
+        margin: 0 0 100px;
+        display: block;
+        text-align: center;
+    }
+
+    .blog h2 {
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    .blog ul {
+        width: auto;
+        padding:
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* HEADER */
+    .header .menu_open {
+        display: block;
+        position: absolute;
+        top: 40%;
+        right: 36px;
+    }
+
+    .header .gnb {
+        display: none;
+    }
+
+    .header .gnb ul {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 99px;
+        right: -1px;
+        background-color: rgb(229, 228, 228);
+    }
+
+    .header .gnb ul li {
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .ani .header .gnb ul a {
+        display: block;
+        width: 160px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    .header .gnb ul a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    /* We are */
+    .we_are {
+        max-width: 1200px;
+        display: block
+    }
+
+    /* 
+
+
+    .we_are {
+        max-width: 1200px;
+        padding: 0 50px;
+        margin: 0 auto 100px;
+        box-sizing: border-box;
+        display: flex;
+    }*/
+
+    .we_are h2 {
+        max-width: auto;
+    }
+
+    .we_are p {
+        max-width: auto;
+        padding-left: 0;
+        border-left: 0 none;
+    }
+
+    /* Main content */
+    .main_content {
+        max-width: auto;
+    }
+
+    .main_content ul {
+        display: block;
+    }
+
+    .main_content ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main_content ul li p {
+        margin-bottom: 25px;
+    }
+
+    /* Work */
+    .work ul {
+        display: block;
+    }
+
+    .work h2 {
+        max-width: auto;
+    }
+
+    .work ul li {
+        width: 100%;
+
+    }
+
+    .work ul li img {
+        width: 100%;
+    }
+
+    /* Blog */
+    .blog {
+        max-width: auto;
+        margin: 0 auto 100px;
+        box-sizing: border-box;
+        display: block
+    }
+
+    .blog h2 {
+        width: auto;
+    }
+
+    .blog ul {
+        width: auto;
+        display: block
+    }
+
+    .blog ul li {
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+}
